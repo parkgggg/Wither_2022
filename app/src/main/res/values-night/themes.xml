@@ -1,0 +1,34 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Wither" parent="Theme.MaterialComponents.Light">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/white</item>  // 기본 버튼 생성 시 버튼 배경색 and 액션바(위더 있는 바) 색상 , 위치 서비스 비활성화 알림창의 취소, 확인 버튼 생상
+        <item name="colorPrimaryVariant">@color/teal_200</item>
+        <item name="colorOnPrimary">@color/black</item>        // 기본 버튼 생성 시 text 색상
+        <item name="android:textColor">@color/black</item>  // 기본 text 컬러
+        <item name="android:textColorPrimary">@color/main_color</item>  // 액션바 앱 이름 색상 ,  위치 서비스 비활성화 알림창의 내용 문구 색상
+
+        <!-- Secondary brand color. -->
+        // 기본 생성 버튼 배경색(colorPrimary 색이 우선이다. 그 색이 black이면
+        // 기본 버튼 색이 black으로 변한다.
+        <item name="colorSecondary">@color/main_color</item>    // floating button의 주변 선 색
+        <item name="colorSecondaryVariant">@color/black</item>  // 기본 생성 버튼 이름 색
+        <item name="colorOnSecondary">@color/black</item>   // 홈 화면에 목록버튼 색(다른건 안변하고 이것만 변함)
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/white</item>  // 상태바 배경색
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>   // 상태바(와이파이 바) 글자색 true이면 검은색 false면 흰색
+        <!-- Customize your theme here. -->
+    </style>
+
+    // 달력 custom
+    <style name="DatePickerTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/main_color</item>
+        <item name="android:textColor">@color/main_color</item>
+    </style>
+
+    // 경고창 색상 바꾸기
+    <style name="MyDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:background">#EAEAEA</item>
+    </style>
+
+</resources>

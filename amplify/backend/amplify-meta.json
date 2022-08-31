@@ -1,0 +1,56 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-sanhakwither44-dev-175351-authRole",
+      "UnauthRoleArn": "arn:aws:iam::449007998650:role/amplify-sanhakwither44-dev-175351-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::449007998650:role/amplify-sanhakwither44-dev-175351-authRole",
+      "Region": "ap-northeast-2",
+      "DeploymentBucketName": "amplify-sanhakwither44-dev-175351-deployment",
+      "UnauthRoleName": "amplify-sanhakwither44-dev-175351-unauthRole",
+      "StackName": "amplify-sanhakwither44-dev-175351",
+      "StackId": "arn:aws:cloudformation:ap-northeast-2:449007998650:stack/amplify-sanhakwither44-dev-175351/03080e30-ee1b-11ec-a864-0aceb6611e2a",
+      "AmplifyAppId": "d3dztzfp27lxq5"
+    }
+  },
+  "auth": {
+    "sanhakwither44788ca345": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "frontendAuthConfig": {
+        "socialProviders": [],
+        "usernameAttributes": [],
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": []
+        },
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-sanhakwither44-dev-175351-deployment/amplify-cfn-templates/auth/sanhakwither44788ca345-cloudformation-template.json",
+        "logicalId": "authsanhakwither44788ca345"
+      },
+      "lastPushTimeStamp": "2022-06-17T09:02:42.828Z",
+      "output": {
+        "UserPoolId": "ap-northeast-2_NS8Y7VEee",
+        "AppClientIDWeb": "2fb41u1h83ufabh3159e206765",
+        "AppClientID": "1jv939u518r2dfklhed4c5n4d8",
+        "IdentityPoolId": "ap-northeast-2:6e2218f1-3e65-46e2-9d57-7b6182f53c15",
+        "UserPoolArn": "arn:aws:cognito-idp:ap-northeast-2:449007998650:userpool/ap-northeast-2_NS8Y7VEee",
+        "IdentityPoolName": "sanhakwither44788ca345_identitypool_788ca345__dev",
+        "UserPoolName": "sanhakwither44788ca345_userpool_788ca345"
+      },
+      "lastPushDirHash": "IXQ/h3Xem/4kKObEWSiMJIvB6t4="
+    }
+  }
+}

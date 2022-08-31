@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="500dp"
+    tools:context=".HomeFloatingFragment"
+    android:layout_centerHorizontal="true"
+    android:layout_centerInParent="true"
+    android:orientation="vertical"
+    android:background="@drawable/alert_white_border"
+    tools:ignore="ExtraText"
+    android:id="@+id/fragment_home_floating_btn"
+    android:clickable="true"
+    >
+
+    <!--android:background="@drawable/blackline"-->
+
+
+    <EditText
+        android:id="@+id/creat_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="18dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:maxLength="16"
+        android:hint="모임이름(최대 16글자)"
+        android:inputType="textPersonName"
+        android:textColor="@color/black"
+        android:textColorHint="#808080"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/create_for_friend"
+        android:layout_width="235dp"
+        android:layout_height="156dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="260dp"
+        android:autoSizeTextType="uniform"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="친구에게 한마디"
+        android:inputType="textMultiLine"
+        android:textColor="@color/black"
+        android:textColorHint="#808080"
+        android:textSize="18dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/create_make_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="42dp"
+        android:layout_marginBottom="30dp"
+        android:text="생성"
+        android:textColor="@color/white"
+        android:background="@drawable/rounded_rectangle_sky_solid_button_shape"
+        android:textStyle="bold"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/create_cancel_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="170dp"
+        android:layout_marginBottom="30dp"
+        android:textColor="@color/white"
+        android:background="@drawable/rounded_rectangle_sky_solid_button_shape"
+        android:text="취소"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/create_person_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="146dp"
+        android:text="인원 :"
+        android:textSize="18dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/create_meung_text"
+        android:layout_width="46dp"
+        android:layout_height="31dp"
+        android:layout_alignBottom="@+id/create_person_text"
+        android:layout_alignTop="@id/create_person_text"
+        android:layout_marginLeft="120dp"
+        android:text="명"
+        android:textSize="18dp"
+        android:textColor="@color/black"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/date_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="190dp"
+        android:backgroundTint="@color/white"
+        android:background="@drawable/category_btn"
+        android:textColor="@color/black"
+        android:text="날짜 선택" />
+
+    <TextView
+        android:id="@+id/date_picker_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="63dp"
+        android:gravity="left"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="18dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/category_btn"
+        android:layout_width="206dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="72dp"
+        android:background="@drawable/category_btn"
+        android:backgroundTint="@color/white"
+        android:text="카테고리"
+        android:textColor="@color/black" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/create_person_num_btn"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/create_meung_text"
+        android:layout_alignBottom="@+id/create_meung_text"
+        android:layout_marginLeft="100dp"
+        android:background="@drawable/category_btn"
+        android:backgroundTint="@color/white"
+        android:text="0"
+        android:textColor="@color/black"
+        android:textSize="18dp" />
+
+    <ListView
+        android:id="@+id/person_num_list"
+        android:layout_width="30dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/create_person_num_btn"
+        android:layout_alignLeft="@id/create_person_num_btn"
+        android:layout_alignRight="@id/create_person_num_btn"
+        android:backgroundTint="@color/black" />
+
+    <ListView
+        android:id="@+id/category_list"
+        android:layout_width="203dp"
+        android:layout_height="222dp"
+        android:layout_below="@id/category_btn"
+        android:layout_alignStart="@id/category_btn"
+        android:layout_alignLeft="@id/category_btn"
+        android:layout_alignRight="@id/category_btn"
+        android:layout_alignBottom="@id/create_for_friend"
+        android:layout_marginStart="3dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="50dp"
+        android:backgroundTint="@color/black" />
+
+</RelativeLayout>
+
+<!--    android:layout_alignLeft="@id/create_person_num_btn"-->
+<!--    android:layout_alignRight="@id/create_person_num_btn"-->

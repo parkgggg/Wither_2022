@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserFragment"
+    android:orientation="vertical">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <!-- 프로필 이미지-->
+
+    <ImageView
+        android:id="@+id/profile"
+        android:layout_width="100dp"
+        android:layout_height="94dp"
+        android:layout_above="@id/make_btn"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="19dp"
+        android:layout_toStartOf="@id/text1"
+        tools:ignore="ImageContrastCheck"
+        tools:src="@tools:sample/avatars"
+        android:contentDescription="TODO" />
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:text="NICKNAME"
+        android:textSize="40sp" />
+
+    <TextView
+
+        android:id="@+id/text2"
+        android:layout_width="257dp"
+        android:layout_height="125dp"
+        android:layout_below="@id/text1"
+        android:layout_alignStart="@id/text1"
+        android:layout_centerInParent="true"
+        android:background="#FF9800"
+        android:text="자기소개란"
+        android:textSize="50sp" />
+
+    <Button
+        android:id="@+id/make_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text2"
+        android:text="생성" />
+
+    <Button
+        android:id="@+id/join_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text2"
+        android:layout_toEndOf="@id/make_btn"
+        android:text="참여" />
+
+
+    <Button
+        android:id="@+id/settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/report_btn"
+        android:layout_marginTop="217dp"
+        android:text="시스템 설정  >" />
+
+    <Button
+        android:id="@+id/report_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="사용자 신고  >" />
+
+    <!--    <FrameLayout-->
+<!--        android:id="@+id/user_fragment_container"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
+
+<!--    </FrameLayout>-->
+
+
+</RelativeLayout>

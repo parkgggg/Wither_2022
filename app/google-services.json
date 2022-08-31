@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "863669676024",
+    "firebase_url": "https://wither-chatting-default-rtdb.firebaseio.com",
+    "project_id": "wither-chatting",
+    "storage_bucket": "wither-chatting.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:863669676024:android:c3d2aa49ab86be2da4180d",
+        "android_client_info": {
+          "package_name": "com.example.wither"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "863669676024-6hsht8r463h3ffil70ba003e6dtoo5iq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAmRpg5TqDDdR3AT_AuVQv7endIPrLm8zU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "863669676024-6hsht8r463h3ffil70ba003e6dtoo5iq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

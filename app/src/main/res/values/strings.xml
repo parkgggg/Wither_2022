@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">wither</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="textview">TextView</string>
+    <string name="홈">홈</string>
+    <string name="my_page">My Page</string>
+    <string name="home">home</string>
+    <string name="chat" />
+    <string name="chatting">chatting</string>
+    <string name="Home">Home</string>
+    <string name="Chat">Chat</string>
+    <string name="My_Wither">My 위더</string>
+    <string name="플러스버튼">플러스 버튼</string>
+    <string name="목록버튼">목록버튼</string>
+    <string name="목록">목록</string>
+    <string name="nickname">NICKNAME</string>
+    <string name="위더">위더</string>
+    <!--    <item name="fragment_InfoWindowClick" type="id">fragment_InfoWindowClick</item>-->
+    <!--SIGN UP-->
+    <string name="username">ID</string>
+    <string name="signupname">ID 입력</string>
+    <string name="signupnickname">닉네임 입력</string>
+    <string name="signuppassword">비밀번호(8자리 이상)</string>
+    <string name="email">이메일 주소 입력</string>
+    <string name="password">비밀번호</string>
+    <string name="signupbtn">회원 가입</string>
+    <string name="sendcode">인증 번호 전송</string>
+
+    <string name="signinbtn">로그인</string>
+    <string name="backtosigninbtn">뒤 로</string>
+
+
+    <!--CONFRIM-->
+    <string name="code">인증 번호 입력</string>
+    <string name="verify">확 인</string>
+
+</resources>

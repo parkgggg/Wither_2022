@@ -1,0 +1,13 @@
+{
+  "projectName": "sanhakwither44",
+  "version": "3.1",
+  "frontend": "android",
+  "android": {
+    "config": {
+      "ResDir": "app/src/main/res"
+    }
+  },
+  "providers": [
+    "awscloudformation"
+  ]
+}
